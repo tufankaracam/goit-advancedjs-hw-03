@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Cat Wiki</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <div class="container">
+      <select class="breedSelect">
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      </select>
+      
+      <p class="loader"></p>
+      <p class="error">Opps! Something went wrong! Try reloading the page!</p>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+
+      <div class="content">
+        <img src="" alt="" class="image">
+        <div class="info">
+          <h2 class="name"></h2>
+          <p class="description"></p>
+          <div class="temperaments"></div>
+      </div>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
